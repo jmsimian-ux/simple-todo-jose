@@ -1,0 +1,14 @@
+groceries:
+  user: one
+  description: Buy groceries
+  completed: false
+
+laundry:
+  user: one
+  description: Do laundry
+  completed: true
+
+other_users_todo:
+  user: two
+  description: Someone else's task
+  completed: false

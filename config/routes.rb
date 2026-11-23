@@ -8,8 +8,9 @@ Rails.application.routes.draw do
 
   resources :passwords, param: :token, only: %i[ new create edit update ]
 
-  get "dashboard", to: "dashboard#show", as: :dashboard
-  get "settings",  to: "settings#show",  as: :settings
+  resources :todos, only: %i[ create update destroy ]
+
+  get "settings", to: "settings#show", as: :settings
 
   namespace :admin do
     root to: redirect("/admin/users")
